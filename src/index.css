@@ -11,7 +11,7 @@
 }
 
 .modal-content{
-  width: 500px;
+  width: 350px;
   background-color: aliceblue;
 }
 
@@ -29,3 +29,24 @@
   border-bottom: 1px solid #eee;
 }
 
+.show-button{
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 2px 2px 18px #888888
+}
+
+.show-button:hover {
+  background-color: rgb(207, 198, 198);
+  color: black;
+}

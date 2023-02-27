@@ -13,7 +13,7 @@ function App() {
   return (
     <>
      <div className='app'>
-        <button onClick={ () => setShowHideModal(true) }>Show Modal</button>
+        <button className='show-button' onClick={ () => setShowHideModal(true) }>Show Modal</button>
         <Modal onClose={ () => setShowHideModal(false) } show={showHideModal} />
      </div>
    </>

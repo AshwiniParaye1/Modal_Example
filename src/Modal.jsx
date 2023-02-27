@@ -9,8 +9,13 @@ function Modal(props) {
   return (
     <>
     
-      <div className='modal'>
-        <div className='modal-content'>
+      {/* if clicked outside, closes the modal */}
+      <div className='modal' onClick={props.onClose}> 
+
+      {/* stop-propogation - if you click inside the content, it will stop at 
+      .modal-content and the onClick in .modal will never be called. */}
+
+        <div className='modal-content' onClick={e => e.stopPropagation()}>
           <div className='modal-header'>
             <h4 className='modal-title'>Modal Title</h4>
           </div>
