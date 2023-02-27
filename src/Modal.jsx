@@ -10,7 +10,15 @@ function Modal(props) {
     <>
     
       <div className='modal'>
-        <h1>Modal</h1>
+        <div className='modal-content'>
+          <div className='modal-title'>
+            <h1>Modal Title</h1>
+          </div>
+          <div className='modal-content-body'>Modal content</div>
+            <div className='modal-close-button'>
+              <button onClick={props.onClose}>Close</button>
+            </div>
+        </div>
       </div>
 
     </>
