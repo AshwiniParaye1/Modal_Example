@@ -11,12 +11,12 @@ function Modal(props) {
     
       <div className='modal'>
         <div className='modal-content'>
-          <div className='modal-title'>
-            <h1>Modal Title</h1>
+          <div className='modal-header'>
+            <h4 className='modal-title'>Modal Title</h4>
           </div>
           <div className='modal-content-body'>Modal content</div>
-            <div className='modal-close-button'>
-              <button onClick={props.onClose}>Close</button>
+            <div className='modal-footer'>
+              <button className='close-button' onClick={props.onClose}>Close</button>
             </div>
         </div>
       </div>
