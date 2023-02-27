@@ -1,20 +1,22 @@
 import React from 'react';
 import Modal from './Modal';
-import Home from './Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
 
 
 function App() {
 
+  const [ showHideModal, setShowHideModal ] = useState(false)
+
+  
+
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/modal" element={<Modal />} />
-        </Routes>
-      </Router>
-    </>
+     <div className='app'>
+      <button onClick={ () => setShowHideModal(true) }>Show Modal</button>
+      <Modal show={showHideModal} />
+     </div>
+   </>
   )
 }
 

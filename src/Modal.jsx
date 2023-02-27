@@ -1,8 +1,19 @@
 import React from 'react'
 
-function Modal() {
+function Modal(props) {
+
+  if(!props.show){
+    console.log("modal component")
+    return null
+  } 
   return (
-    <div>Modal</div>
+    <>
+    
+      <div className='modal'>
+        <h1>Modal</h1>
+      </div>
+
+    </>
   )
 }
 
