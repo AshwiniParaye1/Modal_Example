@@ -17,6 +17,7 @@
 
 .modal-header, .modal-footer{
   padding: 10px;
+
 }
 
 .modal-title{
@@ -24,10 +25,13 @@
 }
 
 .modal-content-body{
+  /* max height - sets the height of modal content */
+  max-height: 30px;  
   padding: 10px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-}
+  overflow-y: auto;
+  }
 
 .show-button{
     margin-top: 30px;
